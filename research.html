@@ -784,6 +784,8 @@ body{
     <h3 style="font-family:'Fraunces',serif;font-size:1.125rem;font-weight:900;color:var(--ink);line-height:1.35;margin-bottom:.75rem">Comparative Analysis of Regression-Based Forecasting Models for State-Level E-Waste Generation Prediction in India</h3>
     <div style="display:flex;flex-wrap:wrap;gap:.5rem .875rem;font-size:.78rem;color:var(--mid)">
       <span><strong style="color:var(--ink)">Author:</strong> Yashas Chaudhry</span>
+      <span><strong style="color:var(--ink)">Published in:</strong> CINEFORUM (Scopus-indexed)</span>
+      <span><strong style="color:var(--ink)">DOI:</strong> 10.66669/cf.2025</span>
       <span><strong style="color:var(--ink)">Domain:</strong> Environmental Data Science</span>
       <span><strong style="color:var(--ink)">Models:</strong> Linear &amp; Polynomial Regression</span>
       <span><strong style="color:var(--ink)">Data:</strong> CPCB Annual Reports 2016–2024</span>
@@ -815,7 +817,7 @@ body{
   <div id="tab-intro" class="tab-panel" style="display:none">
     <h3 class="heading-sm">Introduction</h3>
     <p class="body-text">E-waste — the category of discarded electronics including computers, mobile phones, televisions, and household gadgets — is among the fastest-growing waste streams globally. India is one of the world's largest producers of e-waste, and the problem is accelerating as consumer electronics penetration deepens across the country.</p>
-    <p class="body-text">The Indian government has responded with regulatory frameworks including the E-Waste (Management) Rules 2022, and the Central Pollution Control Board (CPCB) publishes annual state-level data on e-waste collection and processing. Yet despite the policy significance of these numbers, relatively little work has been done to forecast state-level e-waste generation and then actually test those forecasts against real observed data.</p>
+    <p class="body-text">The Indian government has responded with regulatory frameworks including the E-Waste (Management) Rules 2022, and the Central Pollution Control Board (CPCB) publishes annual state-level data on battery recycling and processing. Yet despite the policy significance of these numbers, relatively little work has been done to forecast state-level e-waste generation and then actually test those forecasts against real observed data.</p>
     <p class="body-text">This is the gap this research addresses. I apply two regression specifications — linear and polynomial — to CPCB data from 2016 to 2023, hold out 2024 as a test year (decided before any model was fitted), and compare predicted values against actual 2024 CPCB figures. The research asks five core questions:</p>
     <ul class="blist">
       <li><span class="bdot"></span><span>Can regression-based models predict state-level e-waste generation accurately?</span></li>
@@ -828,7 +830,7 @@ body{
 
   <div id="tab-method" class="tab-panel" style="display:none">
     <h3 class="heading-sm">Methodology</h3>
-    <p class="body-text"><strong>Data:</strong> State-level e-waste collection and processing figures from CPCB annual reports, 2016–2024. 13 states with sufficient coverage for modelling. Data up to 2023 used for training; 2024 held out strictly for validation, decided before any fitting.</p>
+    <p class="body-text"><strong>Data:</strong> State-level battery recycling and processing figures from CPCB annual reports, 2016–2024. 13 states with sufficient coverage for modelling. Data up to 2023 used for training; 2024 held out strictly for validation, decided before any fitting.</p>
     <p class="body-text"><strong>Data preprocessing:</strong> Many CPCB entries have missing values — states where registered recyclers did not file separate annual figures. Missing values were imputed using carry-forward or linear interpolation to preserve the time-series structure, and imputed values were tracked separately in the analysis.</p>
     <p class="body-text"><strong>Model 1 — Linear Regression:</strong></p>
     <div style="background:var(--off);border-radius:var(--r);padding:1rem 1.5rem;font-family:monospace;font-size:.9rem;margin:1rem 0;border:1px solid var(--border)">ŷ = β₀ + β₁·t</div>
@@ -894,13 +896,13 @@ body{
     <span class="callout-ico">🔗</span>
     <div>
       <h3>Why this research and Battery Bin connect</h3>
-      <p>Battery Bin collects batteries at the school level. Threco processes them at the national certified level. This research provides the quantitative backdrop to both — understanding at a data-science level exactly how big the e-waste problem is state by state, how it is growing, and where current forecasting methods succeed or fail. The practitioner and the researcher are the same person. Data science applied to physical-world problems — e-waste, hardware lifecycles, and the infrastructure of electronic devices — is exactly the kind of cross-domain work that makes Computer Engineering compelling to me.</p>
+      <p>Battery Bin collects batteries at the school level.  This research provides the quantitative backdrop to both — understanding at a data-science level exactly how big the e-waste problem is state by state, how it is growing, and where current forecasting methods succeed or fail. The practitioner and the researcher are the same person. Data science applied to physical-world problems — e-waste, hardware lifecycles, and the infrastructure of electronic devices — is exactly the kind of cross-domain work that makes Computer Engineering compelling to me.</p>
       <span class="callout-tag">CPCB Data · Python · scikit-learn · State-level India · Out-of-sample validation · 13 states</span>
     </div>
   </div>
 </div>
 <footer class="foot">
-  <p>© 2025 Yashas Chaudhry · yashaschaudhry.com</p>
+  <p>© 2026 Yashas Chaudhry · yashaschaudhry.com</p>
   <a href="contact.html">Get in touch →</a>
 </footer>
 </main>
