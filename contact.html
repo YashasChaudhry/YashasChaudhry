@@ -705,7 +705,6 @@ body{
     <div class="nav-divider"></div>
     <span class="nav-section-label">Projects</span>
     <a class="nav-link" href="battery-bin.html" onclick="closeNav()"><span class="ni">♻️</span>Battery Bin</a>
-    <a class="nav-link" href="threco.html" onclick="closeNav()"><span class="ni">🏭</span>Threco (North India)</a>
     <a class="nav-link" href="research.html" onclick="closeNav()"><span class="ni">🔬</span>Research Paper</a>
     <a class="nav-link" href="phishsentinel.html" onclick="closeNav()"><span class="ni">🛡️</span>PhishSentinel</a>
     <a class="nav-link" href="brandsnap.html" onclick="closeNav()"><span class="ni">⚡</span>BrandSnap</a>
@@ -783,65 +782,65 @@ body{
 <main id="main">
 
 <div class="banner banner-slate">
-  <div class="banner-watermark">Contact</div>
-  <div class="banner-eyebrow">Get In Touch</div>
-  <div class="banner-title">Let&#39;s <em>connect.</em></div>
-  <div class="banner-desc">Open to college applications, collaborations, and conversations</div>
+ <div class="banner-watermark">Contact</div>
+ <div class="banner-eyebrow">Get In Touch</div>
+ <div class="banner-title">Let&#39;s <em>connect.</em></div>
+ <div class="banner-desc">Open to college applications, collaborations, and conversations</div>
 </div>
 <div class="contact-wrap">
-  <div class="contact-info">
-    <h2>Let&#39;s<br><em>connect.</em></h2>
-    <p>Whether you&#39;re a college admissions officer, potential collaborator, internship recruiter, or someone who wants to talk technology and sustainability — I&#39;d love to hear from you.</p>
-    <div class="clinks">
-      <a href="mailto:yashaschaudhry12@gmail.com" class="clink"><span class="clink-ico">✉️</span><span>yashaschaudhry12@gmail.com</span></a>
-      <a href="https://www.linkedin.com/in/yashas-chaudhry-475556361/" class="clink" target="_blank" rel="noopener"><span class="clink-ico">💼</span><span>LinkedIn — Yashas Chaudhry</span></a>
-      <a href="https://github.com/yashaschaudhry" class="clink" target="_blank" rel="noopener"><span class="clink-ico">⌨️</span><span>GitHub — yashaschaudhry</span></a>
-      <a href="https://www.instagram.com/yashas_chaudhry/" class="clink" target="_blank" rel="noopener"><span class="clink-ico">📸</span><span>Instagram — @yashas_chaudhry</span></a>
-      <a href="https://x.com/dagodzilla1248" class="clink" target="_blank" rel="noopener"><span class="clink-ico">𝕏</span><span>X — @dagodzilla1248</span></a>
-    </div>
-    <div style="margin-top:1.375rem;display:flex;gap:.75rem;flex-wrap:wrap">
-      <a href="resume.pdf" class="btn btn-dark" target="_blank">↓ Download Resume</a>
-      <a href="about.html" class="btn btn-outline">About me →</a>
-    </div>
-    <div class="resume-note">
-      <strong>Resume:</strong> Replace <code>resume.pdf</code> in the site folder with your actual PDF — the download button links to it automatically.
-    </div>
-    <hr class="sep"/>
-    <h3 style="font-family:'Fraunces',serif;font-size:1.125rem;font-weight:900;margin-bottom:.875rem">Live projects</h3>
-    <div class="rows">
-      <div class="row"><div class="row-l"><div class="row-ico ci-g">♻️</div><div class="row-text"><h4>Battery Bin</h4><p>306.5 kg+ recycled · 27 partners · 7 cities · 100,000+ people</p></div></div><a href="https://thebatterybin.com" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.72rem;padding:.35rem .875rem;white-space:nowrap">thebatterybin.com →</a></div>
-      <div class="row"><div class="row-l"><div class="row-ico ci-b">🛡️</div><div class="row-text"><h4>PhishSentinel</h4><p>2,400+ URLs scanned · 340+ threats flagged</p></div></div><a href="https://phishsentinel.in" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.72rem;padding:.35rem .875rem;white-space:nowrap">phishsentinel.in →</a></div>
-      <div class="row"><div class="row-l"><div class="row-ico ci-a">⚡</div><div class="row-text"><h4>BrandSnap</h4><p>8 websites · 3 paying clients · ₹2,000/month</p></div></div><a href="https://thebrandsnap.in" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.72rem;padding:.35rem .875rem;white-space:nowrap">thebrandsnap.in →</a></div>
-      <div class="row"><div class="row-l"><div class="row-ico ci-p">💻</div><div class="row-text"><h4>Hardware Decoded</h4><p>700+ active users · 300+ community members</p></div></div><a href="https://hardwaredecoded.com" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.72rem;padding:.35rem .875rem;white-space:nowrap">hardwaredecoded.com →</a></div>
-    </div>
-  </div>
-  <div class="form-section">
-    <h3>Send a message</h3>
-    <div class="form-g"><label>Your name</label><input type="text" id="fn" placeholder="Jane Smith"/></div>
-    <div class="form-g"><label>Email address</label><input type="email" id="fe" placeholder="jane@example.com"/></div>
-    <div class="form-g"><label>Organisation (optional)</label><input type="text" id="fo" placeholder="MIT Admissions, Google, etc."/></div>
-    <div class="form-g"><label>How can I help?</label>
-      <select id="fs">
-        <option value="">Select a topic...</option>
-        <option>College admissions inquiry</option>
-        <option>Collaboration opportunity</option>
-        <option>Internship / work opportunity</option>
-        <option>Battery Bin partnership</option>
-        <option>BrandSnap — website inquiry</option>
-        <option>General message</option>
-      </select>
-    </div>
-    <div class="form-g"><label>Message</label><textarea id="fm" placeholder="Tell me about a collaboration, internship, or anything else..."></textarea></div>
-    <button class="btn btn-dark" style="width:100%;justify-content:center;padding:.8rem" onclick="handleSubmit()">Send message →</button>
-  </div>
+ <div class="contact-info">
+ <h2>Let&#39;s<br><em>connect.</em></h2>
+ <p>Whether you&#39;re a college admissions officer, potential collaborator, internship recruiter, or someone who wants to talk technology and sustainability — I&#39;d love to hear from you.</p>
+ <div class="clinks">
+ <a href="mailto:yashaschaudhry12@gmail.com" class="clink"><span class="clink-ico">✉️</span><span>yashaschaudhry12@gmail.com</span></a>
+ <a href="https://www.linkedin.com/in/yashas-chaudhry-475556361/" class="clink" target="_blank" rel="noopener"><span class="clink-ico">💼</span><span>LinkedIn — Yashas Chaudhry</span></a>
+ <a href="https://github.com/yashaschaudhry" class="clink" target="_blank" rel="noopener"><span class="clink-ico">⌨️</span><span>GitHub — yashaschaudhry</span></a>
+ <a href="https://www.instagram.com/yashas_chaudhry/" class="clink" target="_blank" rel="noopener"><span class="clink-ico">📸</span><span>Instagram — @yashas_chaudhry</span></a>
+ <a href="https://x.com/dagodzilla1248" class="clink" target="_blank" rel="noopener"><span class="clink-ico">𝕏</span><span>X — @dagodzilla1248</span></a>
+ </div>
+ <div style="margin-top:1.375rem;display:flex;gap:.75rem;flex-wrap:wrap">
+ <a href="resume.pdf" class="btn btn-dark" target="_blank">↓ Download Resume</a>
+ <a href="about.html" class="btn btn-outline">About me →</a>
+ </div>
+ <div class="resume-note">
+ <strong>Resume:</strong> Replace <code>resume.pdf</code> in the site folder with your actual PDF — the download button links to it automatically.
+ </div>
+ <hr class="sep"/>
+ <h3 style="font-family:'Fraunces',serif;font-size:1.125rem;font-weight:900;margin-bottom:.875rem">Live projects</h3>
+ <div class="rows">
+ <div class="row"><div class="row-l"><div class="row-ico ci-g">♻️</div><div class="row-text"><h4>Battery Bin</h4><p>306.5 kg+ recycled · 27 partners · 7 cities · 100,000+ people</p></div></div><a href="https://thebatterybin.com" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.72rem;padding:.35rem .875rem;white-space:nowrap">thebatterybin.com →</a></div>
+ <div class="row"><div class="row-l"><div class="row-ico ci-b">🛡️</div><div class="row-text"><h4>PhishSentinel</h4><p>2,400+ URLs scanned · 340+ threats flagged</p></div></div><a href="https://phishsentinel.in" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.72rem;padding:.35rem .875rem;white-space:nowrap">phishsentinel.in →</a></div>
+ <div class="row"><div class="row-l"><div class="row-ico ci-a">⚡</div><div class="row-text"><h4>BrandSnap</h4><p>8 websites · 3 paying clients · ₹2,000/month</p></div></div><a href="https://thebrandsnap.in" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.72rem;padding:.35rem .875rem;white-space:nowrap">thebrandsnap.in →</a></div>
+ <div class="row"><div class="row-l"><div class="row-ico ci-p">💻</div><div class="row-text"><h4>Hardware Decoded</h4><p>700+ active users · 300+ community members</p></div></div><a href="https://hardwaredecoded.com" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.72rem;padding:.35rem .875rem;white-space:nowrap">hardwaredecoded.com →</a></div>
+ </div>
+ </div>
+ <div class="form-section">
+ <h3>Send a message</h3>
+ <div class="form-g"><label>Your name</label><input type="text" id="fn" placeholder="Jane Smith"/></div>
+ <div class="form-g"><label>Email address</label><input type="email" id="fe" placeholder="jane@example.com"/></div>
+ <div class="form-g"><label>Organisation (optional)</label><input type="text" id="fo" placeholder="MIT Admissions, Google, etc."/></div>
+ <div class="form-g"><label>How can I help?</label>
+ <select id="fs">
+ <option value="">Select a topic...</option>
+ <option>College admissions inquiry</option>
+ <option>Collaboration opportunity</option>
+ <option>Internship / work opportunity</option>
+ <option>Battery Bin partnership</option>
+ <option>BrandSnap — website inquiry</option>
+ <option>General message</option>
+ </select>
+ </div>
+ <div class="form-g"><label>Message</label><textarea id="fm" placeholder="Tell me about a collaboration, internship, or anything else..."></textarea></div>
+ <button class="btn btn-dark" style="width:100%;justify-content:center;padding:.8rem" onclick="handleSubmit()">Send message →</button>
+ </div>
 </div>
 <script>
 function handleSubmit(){
-  var n=document.getElementById("fn").value.trim(),e=document.getElementById("fe").value.trim(),m=document.getElementById("fm").value.trim();
-  if(!n||!e||!m){alert("Please fill in your name, email, and message.");return;}
-  var b=document.querySelector("button[onclick]");
-  b.textContent="✓ Sent! I will be in touch soon.";b.style.background="var(--g)";
-  setTimeout(function(){b.textContent="Send message →";b.style.background="";},4000);
+ var n=document.getElementById("fn").value.trim(),e=document.getElementById("fe").value.trim(),m=document.getElementById("fm").value.trim();
+ if(!n||!e||!m){alert("Please fill in your name, email, and message.");return;}
+ var b=document.querySelector("button[onclick]");
+ b.textContent="✓ Sent! I will be in touch soon.";b.style.background="var(--g)";
+ setTimeout(function(){b.textContent="Send message →";b.style.background="";},4000);
 }
 </script>
 
