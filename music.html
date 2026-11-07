@@ -680,7 +680,7 @@ body{
 .music-hero-title{font-family:"Fraunces",serif;font-size:clamp(2.75rem,6vw,5.5rem);font-weight:900;color:var(--white);line-height:.92;letter-spacing:-.045em;margin-bottom:.875rem}
 .music-hero-title em{font-style:italic;color:var(--gl)}
 .music-hero-desc{font-size:1rem;color:rgba(255,255,255,.45);max-width:480px;line-height:1.65}
-.music-stats-bar{display:grid;grid-template-columns:repeat(4,1fr);background:var(--ink)}
+.music-stats-bar{display:grid;grid-template-columns:repeat(3,1fr);background:var(--ink)}
 .msb{padding:1.5rem 1rem;border-right:1px solid rgba(255,255,255,.06);text-align:center}
 .msb:last-child{border-right:none}
 .msb-n{font-family:"Fraunces",serif;font-size:1.75rem;font-weight:900;color:var(--gl);display:block;line-height:1}
@@ -703,7 +703,8 @@ body{
 .perf-yr{font-size:.65rem;font-weight:700;color:var(--gl);letter-spacing:.06em;min-width:55px;flex-shrink:0}
 .perf-desc{color:var(--ink3);font-size:.84rem;flex:1;line-height:1.4}
 .perf-badge{font-size:.62rem;font-weight:700;color:var(--g);background:var(--gxl);padding:.2rem .625rem;border-radius:100px;white-space:nowrap;flex-shrink:0}
-@media(max-width:860px){.music-hero{min-height:auto;padding:2.5rem 1.25rem}.music-content{padding:2rem 1.25rem}.music-stats-bar{grid-template-columns:1fr 1fr}}
+@media(max-width:860px){.music-hero{min-height:auto;padding:2.5rem 1.25rem}.music-content{padding:2rem 1.25rem}}
+@media(max-width:480px){.music-stats-bar{grid-template-columns:1fr 1fr}.msb:last-child{grid-column:1/-1;border-right:none}}
 @media(max-width:480px){.music-hero{padding:2rem 1rem}.music-content{padding:1.5rem 1rem}}
 </style>
 </head>
@@ -818,7 +819,6 @@ body{
  <div class="msb"><span class="msb-n">10+</span><div class="msb-l">years playing flute</div></div>
  <div class="msb"><span class="msb-n">Gr 3</span><div class="msb-l">when I started</div></div>
  <div class="msb"><span class="msb-n">Every</span><div class="msb-l">school event performed</div></div>
- <div class="msb"><span class="msb-n">1/yr</span><div class="msb-l">Flute Award — one per year</div></div>
 </div>
 <div class="music-content">
  <div class="instr-block">
@@ -832,17 +832,19 @@ body{
  <div class="instr-body">
  <p>I've been playing Indian classical flute since Grade 3 — over a decade, without interruption. It started simply: I liked the sound, and I wanted to be able to make it. Over years of practice I moved through the foundational ragas, learned to control breath and tone, and eventually became the student the school called on for every performance that needed a flute on stage.</p>
  <p>Throughout my school years I've performed at <strong>every school event consistently</strong> — annual functions, cultural evenings, morning assemblies, and every occasion where there was a stage and music was needed. Not as a one-off. Not for a portfolio entry. Just because it was what I did, year after year, since Grade 3.</p>
- <p>In Grade 9 I received the <strong>School Flute Award</strong> — given to one student per year across the entire school. The recognition wasn't for a single performance. It was for six years of consistent practice and presence that the teachers had watched firsthand. That kind of recognition, earned over time, means more to me than anything scored in a single sitting.</p>
+ <p>In Grade 9 I received the <strong>School Flute Award</strong>. The recognition wasn't for a single performance. It was for six years of consistent practice and presence that the teachers had watched firsthand. That kind of recognition, earned over time, means more to me than anything scored in a single sitting.</p>
  </div>
  <div class="perf-timeline">
  <div class="perf-item"><div class="perf-yr">GR 3</div><div class="perf-desc">Started learning Indian classical flute</div></div>
  <div class="perf-item"><div class="perf-yr">GR 4–8</div><div class="perf-desc">Consistent performance at all school events and cultural programmes</div></div>
- <div class="perf-item"><div class="perf-yr">GR 9</div><div class="perf-desc">Performed at Jashn · Received School Flute Award</div><div class="perf-badge">Award — 1 per year</div></div>
+ <div class="perf-item"><div class="perf-yr">GR 9</div><div class="perf-desc">Performed at Jashn · Received School Flute Award</div><div class="perf-badge">Flute Award</div></div>
  <div class="perf-item"><div class="perf-yr">GR 10</div><div class="perf-desc">Performed at Jashn annual function</div></div>
  <div class="perf-item"><div class="perf-yr">GR 11</div><div class="perf-desc">Performed at Jashn · Managed SEVA CAS pottery stall alongside</div></div>
  <div class="perf-item"><div class="perf-yr">GR 12</div><div class="perf-desc">Continued performing at all school events</div></div>
  </div>
- <div class="tags" style="margin-top:1rem"><span class="tag">10+ years</span><span class="tag">Indian classical</span><span class="tag">All school events</span><span class="tag">School Flute Award Gr9</span><span class="tag">One award per year</span></div>
+ <div class="tags" style="margin-top:1rem"><span class="tag">10+ years</span><span class="tag">Indian classical</span><span class="tag">All school events</span><span class="tag">School Flute Award Gr9</span></div>
+ <div class="sub-label">Flute performance photos</div>
+<div class="photo-grid-placeholder"><div class="photo-thumb-ph"><span>📸</span><p>Flute performance</p></div><div class="photo-thumb-ph"><span>📸</span><p>Flute performance</p></div><div class="photo-thumb-ph"><span>📸</span><p>Flute performance</p></div><div class="photo-thumb-ph"><span>📸</span><p>Flute performance</p></div></div>
  </div>
  <hr class="sep"/>
  <div class="instr-block">
@@ -859,13 +861,9 @@ body{
  </div>
  <div class="tags" style="margin-top:1rem"><span class="tag">Trinity College London</span><span class="tag">Grade 2 certified</span><span class="tag">Western guitar</span><span class="tag">Formal examination</span></div>
  </div>
- <hr class="sep"/>
- <div class="sub-label">Performance photos</div>
-<div class="photo-grid-placeholder"><div class="photo-thumb-ph"><span>📸</span><p>Performance</p></div><div class="photo-thumb-ph"><span>📸</span><p>Performance</p></div><div class="photo-thumb-ph"><span>📸</span><p>Performance</p></div><div class="photo-thumb-ph"><span>📸</span><p>Performance</p></div></div>
 </div>
 <footer class="foot">
   <p>© 2026 Yashas Chaudhry · yashaschaudhry.com</p>
-  <a href="contact.html">Get in touch →</a>
 </footer>
 </main>
 <script>

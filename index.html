@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"/>
 <title>Yashas Chaudhry — Student Founder & Technologist — Yashas Chaudhry</title>
-<meta name="description" content="Yashas Chaudhry — built PhishSentinel after his grandfather got scammed, Battery Bin from a landfill observation, Hardware Decoded after two server raids. SOF Gold Medalist. Builder. Class of 2026."/>
+<meta name="description" content="Yashas Chaudhry — built PhishSentinel after his grandfather got scammed, Battery Bin from a landfill observation, Hardware Decoded after two server raids. SOF Gold Medalist. Builder. Class of 2027."/>
 <meta name="theme-color" content="#ffffff"/>
 <style>/* ═══════════════════════════════════════════════════════
    YASHAS CHAUDHRY PORTFOLIO — Premium CSS v2
@@ -663,6 +663,14 @@ body{
 .tab-panel .cards {
   margin-top: 1rem;
 }
+.sbar:nth-child(3n){border-right:none}
+.sbar:nth-child(-n+6){border-bottom:1px solid rgba(255,255,255,.06)}
+@media(max-width:480px){
+ .stats-bar{grid-template-columns:repeat(2,1fr)}
+ .sbar{border-bottom:1px solid rgba(255,255,255,.06);border-right:1px solid rgba(255,255,255,.06)!important}
+ .sbar:nth-child(2n){border-right:none!important}
+ .sbar:last-child{grid-column:1/-1;border-right:none!important;border-bottom:none}
+}
 </style>
 
 </head>
@@ -782,7 +790,7 @@ body{
 .home-name em{font-style:italic;color:var(--g)}
 .home-tagline{font-size:clamp(.875rem,1.15vw,1.0625rem);color:var(--mid);max-width:430px;line-height:1.75;margin-bottom:1.875rem;position:relative;z-index:1}
 .home-ctas{display:flex;gap:.75rem;flex-wrap:wrap;position:relative;z-index:1}
-.stats-bar{background:var(--ink);display:grid;grid-template-columns:repeat(5,1fr)}
+.stats-bar{background:var(--ink);display:grid;grid-template-columns:repeat(3,1fr)}
 .sbar{padding:1.625rem .875rem;border-right:1px solid rgba(255,255,255,.06);text-align:center}
 .sbar:last-child{border-right:none}
 .sbar-n{font-family:'Fraunces',serif;font-size:1.75rem;font-weight:900;color:var(--gl);display:block;line-height:1}
@@ -843,7 +851,7 @@ body{
 <section class="home-hero">
  <div class="home-left">
  <div class="home-wm">Builder</div>
- <div class="home-badge">Class of 2026 · Open to college applications</div>
+ <div class="home-badge">Class of 2027</div>
  <h1 class="home-name">Yashas<br><em>Chaudhry</em></h1>
  <p class="home-tagline">I build at the boundary of hardware and software — recycling infrastructure, cybersecurity systems, and community platforms — because the most interesting problems live where the physical and the digital meet.</p>
  <div class="home-ctas">
@@ -859,12 +867,13 @@ body{
  </div>
 </section>
 <div class="stats-bar">
- <div class="sbar"><span class="sbar-n" data-t="306" data-suffix="+">0+</span><div class="sbar-l">kg batteries recycled</div></div>
+ <div class="sbar"><span class="sbar-n" data-t="306.5" data-dec="1" data-suffix="+">0</span><div class="sbar-l">kg batteries recycled</div></div>
  <div class="sbar"><span class="sbar-n" data-t="27">0</span><div class="sbar-l">partner institutions</div></div>
  <div class="sbar"><span class="sbar-n" data-t="7">0</span><div class="sbar-l">cities reached</div></div>
- <div class="sbar" style="white-space:nowrap"><span class="sbar-n">100K+</span><div class="sbar-l">people reached</div></div>
- <div class="sbar"><span class="sbar-n" data-t="8">0</span><div class="sbar-l">websites built</div></div>
- <div class="sbar"><span class="sbar-n" data-t="300">0</span><div class="sbar-l">community members</div></div>
+ <div class="sbar"><span class="sbar-n">100K+</span><div class="sbar-l">people reached</div></div>
+ <div class="sbar"><span class="sbar-n" data-t="13">0</span><div class="sbar-l">websites built</div></div>
+ <div class="sbar"><span class="sbar-n" data-t="8">0</span><div class="sbar-l">client websites built</div></div>
+ <div class="sbar"><span class="sbar-n" data-t="300" data-suffix="+">0</span><div class="sbar-l">community members</div></div>
  <div class="sbar"><span class="sbar-n" data-t="3">0</span><div class="sbar-l">SOF Gold Medals</div></div>
  <div class="sbar"><span class="sbar-n" data-t="3">0</span><div class="sbar-l">industry internships</div></div>
 </div>
@@ -953,17 +962,17 @@ body{
 </div>
 <script>
 function animCount(el,target){
- var dur=1600,s=performance.now();
+ var dur=1600,s=performance.now(),suf=el.dataset.suffix||'',dec=parseInt(el.dataset.dec||'0',10);
  var r=function(ts){
  var p=Math.min((ts-s)/dur,1),e=1-Math.pow(1-p,3);
- el.textContent=Math.round(e*target)+'+';
+ el.textContent=(e*target).toFixed(dec)+suf;
  if(p<1)requestAnimationFrame(r);
  };requestAnimationFrame(r);
 }
 var cio=new IntersectionObserver(function(entries){
  entries.forEach(function(e){
  if(!e.isIntersecting)return;
- animCount(e.target,parseInt(e.target.dataset.t));
+ animCount(e.target,parseFloat(e.target.dataset.t));
  cio.unobserve(e.target);
  });
 },{threshold:.6});
@@ -971,7 +980,6 @@ document.querySelectorAll('[data-t]').forEach(function(el){cio.observe(el);});
 </script>
 <footer class="foot">
   <p>© 2026 Yashas Chaudhry · yashaschaudhry.com</p>
-  <a href="contact.html">Get in touch →</a>
 </footer>
 </main>
 <script>
