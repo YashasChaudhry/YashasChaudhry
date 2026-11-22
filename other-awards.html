@@ -710,7 +710,7 @@ body{
     <div class="nav-divider"></div>
     <span class="nav-section-label">Awards</span>
     <a class="nav-link" href="school-awards.html" onclick="closeNav()"><span class="ni">🏆</span>School Awards</a>
-    <a class="nav-link" href="olympiad-medals.html" onclick="closeNav()"><span class="ni">🏅</span>Olympiad Medals</a>
+    <a class="nav-link" href="olympiad-results.html" onclick="closeNav()"><span class="ni">📜</span>Olympiad Results</a>
     <a class="nav-link" href="competitions.html" onclick="closeNav()"><span class="ni">🎯</span>Competitions</a>
     <a class="nav-link" href="other-awards.html" onclick="closeNav()"><span class="ni">⭐</span>Other Recognition</a>
     <div class="nav-divider"></div>
@@ -777,6 +777,27 @@ body{
 </script>
 
 <main id="main">
+<style id="pic-css">
+.pic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.25rem;margin-top:1rem}
+.pic-fig{margin:0;display:flex;flex-direction:column;gap:.5rem}
+.pic-fig figcaption{font-size:.78rem;color:var(--mid);line-height:1.4;font-weight:500}
+.pic{position:relative;display:block;aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;background:var(--off);border:1px solid var(--border);text-decoration:none}
+.pic.cert{aspect-ratio:3/2}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#fff;transition:transform .3s}
+.pic.cert img{object-fit:contain}
+a.pic[href]:hover img{transform:scale(1.03)}
+.pic-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.3rem;border:1.5px dashed var(--border2);border-radius:inherit;color:var(--faint);text-align:center;padding:.5rem}
+.pic-ph span{font-size:1.5rem;opacity:.35}
+.pic-ph em{font-style:normal;font-size:.68rem;font-weight:600;line-height:1.3}
+.pic-ph small{font-size:.62rem;opacity:.8}
+.pic.pdf{background:var(--gxl);border-color:var(--gl)}
+.pic.pdf .pic-ph{border:none;color:var(--g)}
+.pic.pdf .pic-ph span{opacity:.9}
+.pic.pdf:hover{border-color:var(--g)}
+.pic-side{width:200px;height:140px;aspect-ratio:auto;flex-shrink:0}
+@media(max-width:700px){.pic-side{width:100%;height:170px}}
+</style>
+
 
 <div class="banner banner-slate">
  <div class="banner-watermark">Recognition</div>
@@ -801,14 +822,14 @@ body{
  </div>
 
  <hr class="sep"/>
- <div class="sub-label">Certificates &amp; photos</div>
- <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.875rem;margin-top:.5rem">
- <div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add Chess Gold x2</span><span class="ph-label">Chess Gold x2</span></div>
- <div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add Skating Gold x2</span><span class="ph-label">Skating Gold x2</span></div>
- <div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add Guitar Trinity</span><span class="ph-label">Guitar Trinity</span></div>
- <div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add Jashn Invite 2025</span><span class="ph-label">Jashn Invite 2025</span></div>
- <div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add Jashn Save-the-Date 2026</span><span class="ph-label">Jashn Save-the-Date 2026</span></div>
- <div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add Jashn Invite 2026</span><span class="ph-label">Jashn Invite 2026</span></div>
+ <div class="sub-label">Certificates, medals &amp; designs</div>
+ <div class="pic-grid">
+  <figure class="pic-fig"><a class="pic cert " href="images/chessgold2.png" target="_blank" rel="noopener" aria-label="Chess gold medals"><span class="pic-ph"><span>📷</span><em>Chess gold</em></span><img src="images/chessgold2.png" alt="Chess gold medals" loading="lazy" onerror="this.parentNode.removeAttribute('href');this.remove()"></a><figcaption>Chess · Gold medals</figcaption></figure>
+  <figure class="pic-fig"><a class="pic cert " href="images/skatinggoldmedal&amp;trophy.png" target="_blank" rel="noopener" aria-label="Skating gold medal and trophy"><span class="pic-ph"><span>📷</span><em>Skating gold</em></span><img src="images/skatinggoldmedal&amp;trophy.png" alt="Skating gold medal and trophy" loading="lazy" onerror="this.parentNode.removeAttribute('href');this.remove()"></a><figcaption>Skating · Gold medal &amp; trophy</figcaption></figure>
+  <figure class="pic-fig"><a class="pic cert " href="images/guitart.png" target="_blank" rel="noopener" aria-label="Trinity College London guitar certificate"><span class="pic-ph"><span>📷</span><em>Guitar</em></span><img src="images/guitart.png" alt="Trinity College London guitar certificate" loading="lazy" onerror="this.parentNode.removeAttribute('href');this.remove()"></a><figcaption>Guitar · Trinity College London Grade 2</figcaption></figure>
+  <figure class="pic-fig"><a class="pic pdf" href="images/jashninvite1.pdf" target="_blank" rel="noopener" aria-label="Jashn 2025 · Official Invite (PDF)"><span class="pic-ph"><span>📄</span><em>Jashn 2025 invite</em><small>PDF · tap to open</small></span></a><figcaption>Jashn 2025 · Official Invite</figcaption></figure>
+  <figure class="pic-fig"><a class="pic cert " href="images/jashnsavethedate2.png" target="_blank" rel="noopener" aria-label="Jashn 2026 save-the-date"><span class="pic-ph"><span>📷</span><em>Save-the-date</em></span><img src="images/jashnsavethedate2.png" alt="Jashn 2026 save-the-date" loading="lazy" onerror="this.parentNode.removeAttribute('href');this.remove()"></a><figcaption>Jashn 2026 · Save-the-Date</figcaption></figure>
+  <figure class="pic-fig"><a class="pic pdf" href="images/jashninvite2.pdf" target="_blank" rel="noopener" aria-label="Jashn 2026 · Official Invite (PDF)"><span class="pic-ph"><span>📄</span><em>Jashn 2026 invite</em><small>PDF · tap to open</small></span></a><figcaption>Jashn 2026 · Official Invite</figcaption></figure>
  </div>
 </div>
 

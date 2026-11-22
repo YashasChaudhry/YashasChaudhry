@@ -714,7 +714,7 @@ body{
     <div class="nav-divider"></div>
     <span class="nav-section-label">Awards</span>
     <a class="nav-link" href="school-awards.html" onclick="closeNav()"><span class="ni">🏆</span>School Awards</a>
-    <a class="nav-link" href="olympiad-medals.html" onclick="closeNav()"><span class="ni">🏅</span>Olympiad Medals</a>
+    <a class="nav-link" href="olympiad-results.html" onclick="closeNav()"><span class="ni">📜</span>Olympiad Results</a>
     <a class="nav-link" href="competitions.html" onclick="closeNav()"><span class="ni">🎯</span>Competitions</a>
     <a class="nav-link" href="other-awards.html" onclick="closeNav()"><span class="ni">⭐</span>Other Recognition</a>
     <div class="nav-divider"></div>
@@ -781,6 +781,27 @@ body{
 </script>
 
 <main id="main">
+<style id="pic-css">
+.pic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.25rem;margin-top:1rem}
+.pic-fig{margin:0;display:flex;flex-direction:column;gap:.5rem}
+.pic-fig figcaption{font-size:.78rem;color:var(--mid);line-height:1.4;font-weight:500}
+.pic{position:relative;display:block;aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;background:var(--off);border:1px solid var(--border);text-decoration:none}
+.pic.cert{aspect-ratio:3/2}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#fff;transition:transform .3s}
+.pic.cert img{object-fit:contain}
+a.pic[href]:hover img{transform:scale(1.03)}
+.pic-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.3rem;border:1.5px dashed var(--border2);border-radius:inherit;color:var(--faint);text-align:center;padding:.5rem}
+.pic-ph span{font-size:1.5rem;opacity:.35}
+.pic-ph em{font-style:normal;font-size:.68rem;font-weight:600;line-height:1.3}
+.pic-ph small{font-size:.62rem;opacity:.8}
+.pic.pdf{background:var(--gxl);border-color:var(--gl)}
+.pic.pdf .pic-ph{border:none;color:var(--g)}
+.pic.pdf .pic-ph span{opacity:.9}
+.pic.pdf:hover{border-color:var(--g)}
+.pic-side{width:200px;height:140px;aspect-ratio:auto;flex-shrink:0}
+@media(max-width:700px){.pic-side{width:100%;height:170px}}
+</style>
+
 
 <div class="banner banner-green">
  <div class="banner-watermark">Competitions</div>
@@ -804,7 +825,7 @@ body{
  <div class="row">
  <div class="row-l"><div class="row-ico ci-g">🏅</div>
  <div class="row-text"><h4>SOF Science Olympiad — Gold Medal &amp; School Rank 2 (Grade 10 &amp; 11)</h4>
- <p>Two consecutive years — Gold Medal and <strong>School Rank 2</strong> in the SOF Science Olympiad in both Grade 10 and Grade 11. Back-to-back. Full details on the <a href="olympiad-medals.html" style="color:var(--g)">Olympiad Medals page</a>.</p></div></div>
+ <p>Two consecutive years — Gold Medal and <strong>School Rank 2</strong> in the SOF Science Olympiad in both Grade 10 and Grade 11. Back-to-back. Full details on the <a href="olympiad-results.html" style="color:var(--g)">Olympiad Results page</a>.</p></div></div>
  <span class="badge bg">School Rank 2 · Both years</span>
  </div>
  <div class="row">
@@ -859,8 +880,10 @@ body{
 
  <hr class="sep"/>
  <div class="sub-label">Certificates &amp; photos</div>
- <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.875rem;margin-top:.5rem">
- <div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add Waterloo Distinction</span><span class="ph-label">Waterloo Distinction</span></div><div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add Ramanujan Certificate</span><span class="ph-label">Ramanujan Certificate</span></div><div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add Xavier SecuroSphere</span><span class="ph-label">Xavier SecuroSphere</span></div><div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add BST Quiz 1st</span><span class="ph-label">BST Quiz 1st</span></div><div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add Science Quiz 2nd</span><span class="ph-label">Science Quiz 2nd</span></div><div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add Drone Race 3rd</span><span class="ph-label">Drone Race 3rd</span></div>
+ <div class="pic-grid">
+  <figure class="pic-fig"><a class="pic cert " href="images/waterloo1.png" target="_blank" rel="noopener" aria-label="Waterloo Mathematics Competition certificate"><span class="pic-ph"><span>📷</span><em>Waterloo</em></span><img src="images/waterloo1.png" alt="Waterloo Mathematics Competition certificate" loading="lazy" onerror="this.parentNode.removeAttribute('href');this.remove()"></a><figcaption>Waterloo Mathematics Competition · Distinction</figcaption></figure>
+  <figure class="pic-fig"><a class="pic cert " href="images/ramanujan1.png" target="_blank" rel="noopener" aria-label="Ramanujan Mathematics Competition certificate"><span class="pic-ph"><span>📷</span><em>Ramanujan</em></span><img src="images/ramanujan1.png" alt="Ramanujan Mathematics Competition certificate" loading="lazy" onerror="this.parentNode.removeAttribute('href');this.remove()"></a><figcaption>Ramanujan Mathematics Competition</figcaption></figure>
+  <figure class="pic-fig"><a class="pic cert " href="images/science1.png" target="_blank" rel="noopener" aria-label="Science quiz certificate"><span class="pic-ph"><span>📷</span><em>Science quiz</em></span><img src="images/science1.png" alt="Science quiz certificate" loading="lazy" onerror="this.parentNode.removeAttribute('href');this.remove()"></a><figcaption>Interhouse Science Quiz</figcaption></figure>
  </div>
 </div>
 

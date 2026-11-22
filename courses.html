@@ -720,7 +720,7 @@ body{
     <div class="nav-divider"></div>
     <span class="nav-section-label">Awards</span>
     <a class="nav-link" href="school-awards.html" onclick="closeNav()"><span class="ni">🏆</span>School Awards</a>
-    <a class="nav-link" href="olympiad-medals.html" onclick="closeNav()"><span class="ni">🏅</span>Olympiad Medals</a>
+    <a class="nav-link" href="olympiad-results.html" onclick="closeNav()"><span class="ni">📜</span>Olympiad Results</a>
     <a class="nav-link" href="competitions.html" onclick="closeNav()"><span class="ni">🎯</span>Competitions</a>
     <a class="nav-link" href="other-awards.html" onclick="closeNav()"><span class="ni">⭐</span>Other Recognition</a>
     <div class="nav-divider"></div>
@@ -787,6 +787,27 @@ body{
 </script>
 
 <main id="main">
+<style id="pic-css">
+.pic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.25rem;margin-top:1rem}
+.pic-fig{margin:0;display:flex;flex-direction:column;gap:.5rem}
+.pic-fig figcaption{font-size:.78rem;color:var(--mid);line-height:1.4;font-weight:500}
+.pic{position:relative;display:block;aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;background:var(--off);border:1px solid var(--border);text-decoration:none}
+.pic.cert{aspect-ratio:3/2}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#fff;transition:transform .3s}
+.pic.cert img{object-fit:contain}
+a.pic[href]:hover img{transform:scale(1.03)}
+.pic-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.3rem;border:1.5px dashed var(--border2);border-radius:inherit;color:var(--faint);text-align:center;padding:.5rem}
+.pic-ph span{font-size:1.5rem;opacity:.35}
+.pic-ph em{font-style:normal;font-size:.68rem;font-weight:600;line-height:1.3}
+.pic-ph small{font-size:.62rem;opacity:.8}
+.pic.pdf{background:var(--gxl);border-color:var(--gl)}
+.pic.pdf .pic-ph{border:none;color:var(--g)}
+.pic.pdf .pic-ph span{opacity:.9}
+.pic.pdf:hover{border-color:var(--g)}
+.pic-side{width:200px;height:140px;aspect-ratio:auto;flex-shrink:0}
+@media(max-width:700px){.pic-side{width:100%;height:170px}}
+</style>
+
 
 <div class="banner banner-purple">
  <div class="banner-watermark">Courses</div>
@@ -808,7 +829,7 @@ body{
  <p>Harvard's flagship Introduction to Computer Science — C, Python, SQL, web development, data structures, algorithms, memory management, and how software maps to hardware. The gold standard intro CS course in the world.</p>
  <div class="tags"><span class="tag">Harvard</span><span class="tag">CS50</span><span class="tag">Grade 12</span><span class="tag">Completed</span></div>
  </div>
- <div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add CS50 Certificate</span><span class="ph-label">CS50 Certificate</span></div>
+ <a class="pic cert pic-side " href="images/cs50.png" target="_blank" rel="noopener" aria-label="CS50 certificate"><span class="pic-ph"><span>📷</span><em>CS50 certificate</em></span><img src="images/cs50.png" alt="CS50 certificate" loading="lazy" onerror="this.parentNode.removeAttribute('href');this.remove()"></a>
 </div>
 <div class="cert-row-item">
  <div class="cert-text">
@@ -818,7 +839,7 @@ body{
  <p>Udemy — Jonas Schmedtmann. Fundamentals through advanced JS: closures, async/await, OOP, DOM, modern ES6+. Applied directly in BrandSnap client websites.</p>
  <div class="tags"><span class="tag">JavaScript</span><span class="tag">Udemy</span><span class="tag">Grade 12</span><span class="tag">Completed</span></div>
  </div>
- <div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add JS Certificate</span><span class="ph-label">JS Certificate</span></div>
+ <a class="pic cert pic-side " href="images/jscourse.png" target="_blank" rel="noopener" aria-label="JavaScript course certificate"><span class="pic-ph"><span>📷</span><em>JS course certificate</em></span><img src="images/jscourse.png" alt="JavaScript course certificate" loading="lazy" onerror="this.parentNode.removeAttribute('href');this.remove()"></a>
 </div>
 
  <div class="cert-img-placeholder"><span class="ph-ico">📄</span><span class="ph-txt">Add Certificate</span><span class="ph-label">Certificate</span></div>
